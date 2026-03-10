@@ -14,4 +14,26 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.toggle('active');
         });
     });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('.nav');
+
+    if (mobileMenuBtn && nav) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            nav.classList.toggle('active');
+            document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : ''; // Prevent scrolling
+        });
+
+        // Close mobile menu on link click
+        const navLinks = nav.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                nav.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    }
 });
