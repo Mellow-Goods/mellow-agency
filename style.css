@@ -1072,6 +1072,97 @@ h4 {
     .cta-banner h2 {
         font-size: 28px;
     }
+
+    /* Responsive Buttons */
+    .btn {
+        white-space: normal;
+        max-width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .btn-secondary,
+    .btn-white {
+        padding: 14px 20px;
+        font-size: 15px;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.4;
+    }
+
+    /* Responsive Comparison Table */
+    .table-container {
+        overflow-x: hidden;
+        border-radius: 0;
+        box-shadow: none;
+        background: transparent;
+        margin-top: 30px;
+    }
+
+    .comparison-table,
+    .comparison-table tbody,
+    .comparison-table tr,
+    .comparison-table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .comparison-table thead {
+        display: none;
+    }
+
+    .comparison-table tr {
+        margin-bottom: 30px;
+        background: white;
+        border: 1px solid #eee;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .comparison-table td {
+        padding: 20px;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .comparison-table td:last-child {
+        border-bottom: none;
+    }
+
+    .comparison-table td:nth-child(1) {
+        background: var(--navy-color);
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .comparison-table td:nth-child(2)::before {
+        content: "AGC Media Agency™";
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+
+    .comparison-table td:nth-child(3)::before {
+        content: "Other Agencies/Freelancers";
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .comparison-table td.highlight-col {
+        border-left: none !important;
+        border-right: none !important;
+        border-top: none !important;
+    }
 }
 
 @media (max-width: 480px) {
