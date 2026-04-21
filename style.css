@@ -1141,7 +1141,7 @@ h4 {
     }
 
     .comparison-table td:nth-child(2)::before {
-        content: "AGC Media Agency™";
+        content: "Mellow Agency™";
         display: block;
         font-size: 18px;
         font-weight: 700;
